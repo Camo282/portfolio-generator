@@ -129,7 +129,5 @@ promptUser()
   .then(portfolioData => {
     console.log(portfolioData);
     const pageHTML = generatePage(portfolioData);
-    fs.writeFile('./index.html', pageHTML, err => {
-     if (err) throw new Error(err);
-    });
+    fs.writeFile('./dist/index.html');
   });
